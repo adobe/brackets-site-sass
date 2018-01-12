@@ -1,0 +1,191 @@
+header {
+    .nav-user {
+        display: inline-block;
+        position: relative;
+        float: right;
+        height: 60px;
+        a {
+            margin-right: 20px;
+            img {
+                position: relative;
+                top: -2px;
+                margin: 0 auto;
+                border-radius: 5px;
+                &:hover {
+                    -moz-box-shadow: 1px 2px 4px $line_shadow;
+                    -webkit-box-shadow: 1px 2px 4px $line_shadow;
+                    box-shadow: 1px 2px 4px $line_shadow;
+                }
+            }
+            &:hover {
+                i {
+                    opacity: 1;
+                }
+                img {
+                    -moz-box-shadow: 1px 2px 4px $line_shadow;
+                    -webkit-box-shadow: 1px 2px 4px $line_shadow;
+                    box-shadow: 1px 2px 4px $line_shadow;
+                }
+            }
+            i {
+                display: inline-block;
+                position: relative;
+                height: 12px;
+                width: 12px;
+                margin-top: 22px;
+                background-size: 12px 12px;
+                opacity: 0.6;
+                &.caret {
+                    background: $url_15 no-repeat 0 0;
+                }
+            }
+        }
+        .nav-button {
+            display: inline-block;
+            position: relative;
+            top: -3px;
+            a {
+                @extend %button_base;
+                color: $black_headings;
+                background-color: transparent;
+                border-width: 0px;
+                border-radius: 0px;
+                padding: 0 1.3em;
+                -webkit-border-radius: 0px;
+                -webkit-transition: none !important;
+                -moz-transition: none !important;
+                -o-transition: none !important;
+                transition: none !important;
+                font: 400 15px / 60px $font_1, $font_2;
+                &:hover {
+                    color: $white;
+                    background-color: $brackets_blue;
+                    height: 65px;
+                    i {
+                        background-size: 17px 17px;
+                        &.nav-download {
+                            background: $url_4 no-repeat 0 0;
+                        }
+                        &.nav-login {
+                            background: $url_6 no-repeat 0 0;
+                        }
+                        &.nav-upload {
+                            background: $url_18 no-repeat 0 0;
+                        }
+                    }
+                }
+                i {
+                    display: inline-block;
+                    position: relative;
+                    height: 17px;
+                    width: 17px;
+                    top: 3px;
+                    margin-right: 2px;
+                    background-size: 17px 17px;
+                    &.nav-download {
+                        background: $url_3 no-repeat 0 0;
+                    }
+                    &.nav-login {
+                        background: $url_5 no-repeat 0 0;
+                    }
+                    &.nav-upload {
+                        top: 4px;
+                        background: $url_17 no-repeat 0 0;
+                    }
+                }
+            }
+        }
+        .nav-menu {
+            display: none;
+            position: relative;
+            z-index: 100;
+            width: 220px;
+            margin-left: -190px;
+            background-color: $header_white;
+            background-clip: padding-box;
+            border: 1px solid $dropdown-border;
+            border-radius: 4px;
+            box-shadow: 0 3px 12px $dropdown-border;
+            &::after {
+                top: -14px;
+                right: 10px;
+                left: auto;
+                border: 7px solid transparent;
+                border-bottom-color: $white;
+            }
+            &::before,
+            &::after {
+                position: absolute;
+                display: inline-block;
+                content: "";
+            }
+            &::before {
+                top: -16px;
+                right: 9px;
+                left: auto;
+                border: 8px solid transparent;
+                border-bottom-color: $dropdown-border;
+            }
+            a {
+                display: block;
+                position: relative;
+                margin: 5px 0px 5px 0px;
+                padding: 5px 5px 5px 10px;
+                font: 400 14px/20px $font_1, $font_2;
+                text-align: left;
+                vertical-align: middle;
+                &:hover {
+                    color: $white;
+                    background-color: $brackets_blue;
+                }
+                &::after {
+                    border-bottom: none;
+                }
+            }
+            p {
+                display: block;
+                position: relative;
+                margin: 5px 0px 5px 0px;
+                padding: 5px 5px 5px 10px;
+                font: 400 14px/20px $font_1, $font_2;
+                text-align: left;
+                vertical-align: middle;
+                color: $brackets_gray;
+                span {
+                    font-weight: 700;
+                }
+            }
+            .divider {
+                display: block;
+                height: 1px;
+                margin: 4px 1px;
+                background-color: $dropdown-border;
+            }
+        }
+        @supports (-ms-ime-align: auto) {
+            /* Edge support */
+            .nav-menu {
+                top: -62px;
+            }
+            a {
+                i.caret {
+                    top: -60px;
+                    left: 30px
+                }
+            }
+        }
+        @media all and (-ms-high-contrast: none),
+        (-ms-high-contrast: active) {
+            /* IE10 & IE11 Support */
+            .nav-menu {
+                top: -62px;
+            }
+            a {
+                i.caret {
+                    top: -60px;
+                    left: 30px
+                }
+            }
+        }
+    }
+}

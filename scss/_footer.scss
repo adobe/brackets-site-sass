@@ -1,0 +1,140 @@
+$github: github;
+$twitter: twitter;
+$googleplus: googleplus;
+$facebook: facebook;
+$adobe-logo: adobe-logo;
+@mixin footer-icons($name, $url, $size: 40px) {
+    &.#{$name} {
+        width: $size;
+        height: $size;
+        background: $url no-repeat 0 0;
+        background-size: $size;
+    }
+}
+
+footer {
+    background-color: $brackets_black;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    a {
+        color: $white;
+        &:hover {
+            color: $brackets-blue;
+        }
+        &:focus {
+            color: $brackets-blue;
+        }
+    }
+    ul {
+        color: $brackets_gray;
+    }
+    h5 {
+        color: $white;
+        font: 300 20px / 28px $font_3, $font_4, $font_5, $font_6;
+        margin-bottom: 0.5em;
+    }
+    p {
+        color: $white;
+        font: 400 14px / 18px $font_3, $font_4, $font_5, $font_6;
+        padding: 4px 0;
+    }
+    .column,
+    .columns {
+        padding-left: 0.25em;
+        padding-right: 0.25em;
+    }
+}
+
+.logo-footer {
+    i {
+        background: $url_0 no-repeat 0 0;
+        background-size: 20px 20px;
+        display: inline-block;
+        height: 20px;
+        width: 20px;
+        margin: 0 7px 0 0;
+        position: relative;
+        top: 2px;
+    }
+    &:hover {
+        -webkit-filter: hue-rotate(360deg);
+        filter: hue-rotate(360deg);
+        -webkit-transition: all 3s;
+        -moz-transition: all 3s;
+        transition: all 3s;
+    }
+}
+
+#footer-desc {
+    padding-right: 24px;
+}
+
+.icons-footer {
+    padding: 0;
+    margin: 10px auto;
+    a {
+        i {
+            display: block;
+            margin: 0 auto;
+            border: 0;
+            @include footer-icons($github, $url_7);
+            @include footer-icons($twitter, $url_8);
+            @include footer-icons($googleplus, $url_9);
+            @include footer-icons($facebook, $url_10);
+        }
+    }
+    div {
+        padding: 0;
+        .icon-holder {
+            position: absolute;
+            left: 50%;
+            width: 220px;
+            height: 40px;
+            margin-left: -110px;
+        }
+    }
+}
+
+@supports (-moz-appearance: none) {
+    .icons-footer {
+        a:hover,
+        a:active,
+        a:link,
+        a:focus {
+            outline: 0px none;
+            i:focus
+            {
+                outline: 1px dotted blue;
+            }
+        }
+    }
+}
+
+.about-footer {
+    padding-top: 30px;
+    margin-top: 30px;
+    div {
+        padding: 0;
+        p {
+            position: relative;
+            left: 50%;
+            width: 174px;
+            height: 22px;
+            margin-left: -86px;
+            span {
+                color: $about-footer;
+                font: 400 13px / 20px $font_1, $font_2;
+                float: left;
+                padding-left: 10px;
+                margin-bottom: 0;
+            }
+            i {
+                float: left;
+                position: relative;
+                margin-top: 2px;
+                border: 0;
+                @include footer-icons($adobe-logo, $url_11, 20px);
+            }
+        }
+    }
+}

@@ -1,0 +1,58 @@
+.reveal-modal {
+    display: none;
+    background: $white;
+    top: 100px;
+    position: absolute;
+    z-index: 101;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 0 0 10px $black_40;
+    -webkit-box-shadow: 0 0 10px $black_40;
+    box-shadow: 0 0 10px $black_40;
+    padding: 30px 40px 10px;
+    left: 50%;
+    &.fixed-width {
+        width: 520px;
+        margin-left: -260px;
+    }
+    .close-reveal-modal {
+        font-size: 22px;
+        line-height: .5;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: $off_black;
+        text-shadow: 0 -1px 1px $line_shadow5;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    h2 {
+        font-size: 1.5em;
+        margin: 0 0 1em;
+    }
+    h2 {
+        a {
+            color: $brackets-blue;
+            font: 400 24px / 30px $font_1, $font_2;
+            text-align: center;
+        }
+    }
+    h3 {
+        font: 400 18px / 30px $font_1, $font_2;
+    }
+    p {
+        font: 300 14px / 24px $font_1, $font_2;
+    }
+}
+
+.reveal-modal-bg {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: $black_40;
+    z-index: 100;
+    display: none;
+    top: 0;
+    left: 0;
+}

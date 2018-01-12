@@ -1,0 +1,165 @@
+/* Based on code from https://github.com/enyo/dropzone. See https://github.com/enyo/dropzone/blob/master/readme.md for license information. */
+/* The MIT License */
+.dropzone {
+	@extend %extend_1;
+	position: relative;
+	border: 1px solid $black_8;
+	background: $url_16 50% 50% no-repeat, $black_2;
+	padding: 1em;
+	width: 400px;
+	min-height: 200px;
+	text-align: center;
+	* {
+		@extend %extend_1;
+	}
+	&.clickable {
+		cursor: pointer;
+		.message {
+			cursor: pointer;
+			span {
+				cursor: pointer;
+			}
+		}
+		* {
+			cursor: default;
+		}
+	}
+	.message {
+		font-family: $font_1;
+		color: $color_storm_dust;
+		opacity: 1;
+		-ms-filter: none;
+		filter: none;
+	}
+	&.drag-hover {
+		border-color: $black_15;
+		background: $black_4;
+	}
+	.preview {
+		@extend %extend_2;
+		.details {
+			.filename {
+				float: left;
+			}
+			img {
+				display: none;
+			}
+			.size {
+				float: right;
+			}
+		}
+		&.error {
+			.error-mark {
+				display: block;
+			}
+			.error-message {
+				display: block;
+			}
+			.progress .upload {
+				background-color: $red;
+			}
+		}
+		&.success {
+			.success-mark {
+				display: block;
+			}
+			.success-message {
+				display: block;
+			}
+		}
+		.success-mark {
+			@extend %extend_3;
+			color: $color_mantis;
+		}
+		.error-mark {
+			@extend %extend_3;
+			color: $color_torch_red;
+		}
+		.progress {
+			@extend %extend_4;
+			.upload {
+				@extend %extend_5;
+			}
+		}
+		.error-message {
+			clear: both;
+			display: none;
+		}
+		.success-message {
+			clear: both;
+			display: none;
+		}
+		&.processing .progress {
+			display: inline-block;
+			width: 100%;
+		}
+	}
+	&.started .message {
+		display: none;
+	}
+}
+.dropzone-previews {
+	@extend %extend_1;
+	* {
+		@extend %extend_1;
+	}
+	.preview {
+		@extend %extend_2;
+		.details {
+			.filename {
+				float: left;
+			}
+			img {
+				display: none;
+			}
+			.size {
+				float: right;
+			}
+		}
+		&.error {
+			.error-mark {
+				display: block;
+			}
+			.error-message {
+				display: block;
+			}
+			.progress .upload {
+				background-color: $red;
+			}
+		}
+		&.success {
+			.success-mark {
+				display: block;
+			}
+			.success-message {
+				display: block;
+			}
+		}
+		.success-mark {
+			@extend %extend_3;
+			color: $color_mantis;
+		}
+		.error-mark {
+			@extend %extend_3;
+			color: $color_torch_red;
+		}
+		.progress {
+			@extend %extend_4;
+			.upload {
+				@extend %extend_5;
+			}
+		}
+		.error-message {
+			clear: both;
+			display: none;
+		}
+		.success-message {
+			clear: both;
+			display: none;
+		}
+		&.processing .progress {
+			display: inline-block;
+			width: 100%;
+		}
+	}
+}

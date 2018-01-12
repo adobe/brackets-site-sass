@@ -1,0 +1,42 @@
+@import "fonts";
+@import "colors";
+@import "button";
+
+html {
+	-webkit-font-smoothing: subpixel-antialiased;
+	-webkit-text-stroke: 1px transparent;
+}
+
+body {
+    color: $off_black;
+    background-color: $white;
+    text-decoration: none;
+    font-family: $font_1, $font_2;
+    
+    .off-color {
+        background-color: $off_white;
+    }
+    padding-top: 70px;
+}
+
+h1, h2, h3 {
+    font-family: $font_3, $font_4, $font_5, $font_6;    
+}
+
+ul, ol, dl {
+	list-style-position: inside;
+	list-style-type: none;
+	margin-left: 0;
+	font: 400 14px / 24px $font_3, $font_4, $font_5, $font_6;
+}
+
+.row {
+    padding: 0 20px;
+}
+
+//section {
+//    .column, .columns {
+//        padding: 0 !important;
+//    }
+//}
+

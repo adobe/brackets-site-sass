@@ -1,0 +1,347 @@
+#banner {
+    padding: 1em;
+}
+
+#banner-wrapper {
+    background: $brackets_blue;
+    color: $white;
+    padding: 0 1em;
+}
+
+.banner-text {
+    display: inline-block;
+    font: 400 16px $font_3, $font_4, $font_5, $font_6;
+    line-height: 1.5em;
+    margin: 0 1em 0.5em 0;
+}
+
+#hero-wrapper {
+    background-color: none;
+    padding: 0;
+}
+
+#hero {
+    h1 {
+        color: $black_headings;
+        font: 300 32px / 56px $font_3, $font_4, $font_5, $font_6;
+        margin: 0;
+        padding-top: 50px;
+        text-align: center;
+        i {
+            &.error {
+                display: block;
+                position: relative;
+                height: 80px;
+                width: 80px;
+                top: 3px;
+                left: 50%;
+                margin-left: -40px;
+                background-size: 50px 50px;
+                background: $url_12 no-repeat 0 0;
+            }
+            margin: 0 auto;
+        }
+    }
+    h2 {
+        color: $black_headings;
+        font: 500 20px / 56px $font_3, $font_4, $font_5, $font_6;
+        margin: 0;
+        text-align: center;
+    }
+    p {
+        color: $black_headings;
+        font: 300 24px / 36px $font_3, $font_4, $font_5, $font_6;
+        text-align: center;
+        width: 70%;
+        margin: 0 auto 20px;
+    }
+    h2.light-weight {
+        font: 300 20px / 32px $font_3, $font_4, $font_5, $font_6;
+    }
+}
+
+.back-bar {
+    content: '';
+    position: relative;
+    width: 100%;
+    background: $brackets_blue;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: initial;
+    box-shadow: 0 6px 5px -5px $line_shadow2;
+    background: -webkit-linear-gradient($white 25%, $back_bar_white 25.5%, $brackets_blue 26%);
+    background: -o-linear-gradient($white 25%, $back_bar_white 25.5%, $brackets_blue 26%);
+    background: -moz-linear-gradient($white 25%, $back_bar_white 25.5%, $brackets_blue 26%);
+    background: linear-gradient($white 25%, $back_bar_white 25.5%, $brackets_blue 26%);
+    #back-bar-img {
+        display: block;
+        margin: 0px auto;
+        position: relative;
+        width: 1059px;
+    }
+}
+
+#sub-hero-wrapper {
+    padding: 20px 0 40px;
+    position: relative;
+    h2 {
+        font: 400 20px $font_3, $font_4, $font_5, $font_6;
+        margin-bottom: 10px;
+    }
+    .button.secondary {
+        margin-bottom: 50px;
+    }
+    &.contribute-wrapper {
+        padding: 40px 0 40px;
+        background-color: $brackets_blue !important;
+        .sub-intro {
+            h3 {
+                color: $white !important;
+                text-align: left !important;
+            }
+            p {
+                color: $white !important;
+            }
+        }
+    }
+}
+
+.intro {
+    p {
+        color: $white;
+        font-family: $font_1, $font_2;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 22px;
+        margin: 0 auto 40px;
+        text-align: center;
+    }
+    h1 {
+        color: $white;
+        font: 300 32px / 56px $font_3, $font_4, $font_5, $font_6;
+        text-align: center;
+    }
+}
+
+.sub-intro {
+    h1 {
+        color: $off_black;
+        font: 300 32px / 56px $font_3, $font_4, $font_5, $font_6;
+        text-rendering: optimizeLegibility;
+        line-height: 34px;
+    }
+    p {
+        font-family: $font_1, $font_2;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 24px; //Fix
+        margin: 0 auto 10px;
+        color: $off_black;
+        text-rendering: optimizeLegibility;
+    }
+    h3 {
+        color: $off_black;
+        font: 300 24px / 30px $font_3, $font_4, $font_5, $font_6;
+        margin: 0;
+        text-align: center;
+    }
+}
+
+#details-wrapper {
+    padding: 50px 0 50px 0;
+    h2 {
+        margin: 0;
+        font: 300 20px $font_3, $font_4, $font_5, $font_6;
+        text-rendering: optimizeLegibility;
+    }
+    p {
+        font-family: $font_1, $font_2;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 24px;
+        margin: 20px auto 10px;
+        color: $off_black;
+        text-rendering: optimizeLegibility;
+    }
+    img {
+        float: left;
+        margin-right: 12px;
+        margin-top: 7px;
+    }
+    &.landing {
+        box-shadow: 1px -1px 0px $line_shadow;
+    }
+}
+
+#content-wrapper3 {
+    padding: 50px 0 50px 0;
+    h1 {
+        color: $off_black;
+        font: 300 32px / 56px $font_3, $font_4, $font_5, $font_6;
+        text-rendering: optimizeLegibility;
+        margin: 0 0 12px 0;
+    }
+    h2 {
+        padding: 0;
+        margin: 0;
+        color: $brackets-blue;
+        font: 400 20px $font_3, $font_4, $font_5, $font_6;
+        text-rendering: optimizeLegibility;
+    }
+    p {
+        font-family: $font_1, $font_2;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 24px;
+        margin: 5px auto 20px;
+        color: $off_black;
+        text-rendering: optimizeLegibility;
+    }
+    &.landing {
+        box-shadow: 1px -1px 0px $line_shadow;
+    }
+    &.help-registry {
+        padding: 10px 0;
+    }
+    &.upload-registry {
+        padding: 40px 0 20px;
+    }
+}
+
+#contributors {
+    overflow: hidden;
+    margin: 40px 0 50px 0;
+    -webkit-animation: loading 2s cubic-bezier(1, -0.04, .99, .88);
+    animation: loading 2s cubic-bezier(1, -0.04, .99, .88);
+    a {
+        float: left;
+        height: 56px;
+        width: 56px;
+        -webkit-filter: saturate(96%) opacity(69%);
+        filter: saturate(96%) opacity(69%);
+        -webkit-transition: 220ms;
+        transition: 220ms;
+        &:hover {
+            -webkit-filter: saturate(100%) opacity(100%);
+            filter: saturate(100%) opacity(100%);
+        }
+    }
+}
+
+@-webkit-keyframes loading {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes loading {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#content-wrapper1 {
+    .box {
+        background-color: $white;
+        -webkit-box-shadow: 0 0 5px 0 $line_shadow;
+        -moz-box-shadow: 0 0 5px 0 $line_shadow;
+        box-shadow: 0 0 5px 0 $line_shadow;
+        border-radius: 5px;
+        padding: 8px;
+        margin: 3px;
+        p {
+            font-family: $font_1, $font_2;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 18px;
+            padding: 0 5px;
+            margin: 0;
+            color: $off_black;
+            text-rendering: optimizeLegibility;
+        }
+        h3 {
+            font-family: $font_1, $font_2;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 18px;
+            padding: 5px;
+            color: $off_black;
+            text-rendering: optimizeLegibility;
+        }
+    }
+    h1 {
+        color: $off_black;
+        font: 300 32px / 56px $font_3, $font_4, $font_5, $font_6;
+        text-rendering: optimizeLegibility;
+        margin: 0;
+        line-height: 35px;
+    }
+    h2 {
+        padding: 5px;
+        margin-bottom: 0!important;
+        color: $brackets_blue;
+        font: 400 20px $font_3, $font_4, $font_5, $font_6;
+        text-rendering: optimizeLegibility;
+    }
+    p {
+        font-family: $font_1, $font_2;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 24px;
+        margin: 12px auto 10px;
+        color: $off_black;
+        text-rendering: optimizeLegibility;
+    }
+    &.contribute-wrapper {
+        .box {
+            min-height: 6em;
+            overflow: hidden;
+            margin-right: 8px;
+            margin-top: 8px;
+            height: auto !important;
+            margin: 10px !important;
+            padding: 12px;
+            p {
+                position: absolute;
+                bottom: 20px;
+                right: 20px;
+            }
+            &:hover {
+                -webkit-box-shadow: 0 0 5px 0 $brackets_blue_shadow;
+                -moz-box-shadow: 0 0 5px 0 $brackets_blue_shadow;
+                box-shadow: 0 0 5px 0 $brackets_blue_shadow;
+                -webkit-transition: 500ms;
+                -moz-transition: 500ms;
+                transition: 500ms;
+            }
+        }
+        h2 {
+            font: 400 16px $font_1, $font_2;
+            padding: 0 0 10px 0;
+            margin: 0;
+        }
+        h1 {
+            font-weight: 400;
+            float: left;
+            padding-right: 12px;
+        }
+    }
+}
+
+.contribute-wrapper {
+        .sub-intro {
+            p {
+                margin-top:10px;
+            }
+    }
+}
+
+.contribute-img {
+    padding: 2px;
+    width: auto!important;
+}
