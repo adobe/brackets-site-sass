@@ -68,6 +68,13 @@
     }
 }
 
+#fourth {
+    & > div {
+        margin-top: 25px;
+    }
+}
+
+
 //Custom margin
 .dropzone {
     margin: 20px auto;
