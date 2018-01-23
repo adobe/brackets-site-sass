@@ -21,62 +21,32 @@
  *
  */
 
-%extend_1 {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
+/*eslint-env node */
+/*jslint node: true */
+'use strict';
+module.exports = function (grunt) {
+    require('load-grunt-tasks')(grunt);
 
-%extend_2 {
-    background: $white_80;
-    position: relative;
-    display: block;
-    margin: 16px;
-    padding: 8px;
-    border: 1px solid $silver_chalice;
-    text-align: left;
-}
+    grunt.initConfig({
+        pkg: grunt.file.readJSON('package.json'),
+        sass: {
+            options: {
+                sourceMap: true,
+                outputStyle: "compressed"
+            },
+            dist: {
+                files: {
+                    '../css/brackets.min.css': 'scss/brackets.scss'
+                }
+            }
+        },
+        watch: {
+			css: {
+				files: 'scss/*.scss',
+				tasks: ['sass']
+			}
+		}
+    });
 
-%extend_3 {
-    display: none;
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    font-size: 30px;
-    text-align: center;
-    right: -10px;
-    top: -10px;
-}
-
-%extend_4 {
-    clear: both;
-    background: $color_iron;
-    display: none;
-    height: 15px;
-    border-radius: 0;
-    margin-top: 5px;
-    margin-bottom: 0;
-}
-
-%extend_5 {
-    display: block;
-    width: 0;
-    height: 100%;
-    background-color: $color_mantis;
-}
-
-%extend_input {
-    margin-top: 20px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    background-color: $white;
-    border-color: $line_shadow;
-    &:hover,
-    &:focus,
-    &:active {
-        background-color: $white;
-        border-color: $line_shadow;
-        box-shadow: 0px 0px 3px $brackets-blue;
-    }
-}
+    grunt.registerTask('compile', ['watch']);
+};
