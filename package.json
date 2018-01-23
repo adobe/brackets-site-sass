@@ -9,5 +9,5 @@
     "grunt-sass": "^2.0.0",
     "load-grunt-tasks": "^3.5.2"
   },
-  "author": "shubhsnov"
+  "author": "adobe"
 }
