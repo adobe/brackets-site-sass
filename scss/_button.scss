@@ -1,0 +1,81 @@
+/*
+ * Copyright (c) 2018 - present Adobe Systems Incorporated. All rights reserved.
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a
+ * copy of this software and associated documentation files (the "Software"),
+ * to deal in the Software without restriction, including without limitation
+ * the rights to use, copy, modify, merge, publish, distribute, sublicense,
+ * and/or sell copies of the Software, and to permit persons to whom the
+ * Software is furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+ * DEALINGS IN THE SOFTWARE.
+ *
+ */
+
+%button_base {
+    border-style: solid;
+    border-width: 0px;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: normal;
+    line-height: normal;
+    position: relative;
+    text-decoration: none; 
+    text-align: center;
+    -webkit-appearance: none;
+    display: inline-block;
+    padding-top: 1rem;
+    padding-right: 2rem;
+    padding-bottom: 1.0625rem;
+    padding-left: 2rem;
+    font-size: 1rem;
+    background-color: $brackets_blue;
+    border-color: $brackets_blue;
+    color: $white;
+    transition: 320ms ease-out;
+    border-radius: 35px;
+    -webkit-border-radius: 35px;
+}
+
+button, .button, .reversed-button, .border-button {
+    @extend %button_base;
+}
+
+.reversed-button, .border-button {
+    border-width: 2px;
+}
+
+button, .button {
+    &:hover, &:focus, &:active  {
+        background-color: $brackets_blue_dark;
+    }
+}
+
+.reversed-button {
+    color: $brackets_blue;
+    background-color: $white;
+    
+    &:hover, &:focus, &:active  {
+		color: $white;
+        background-color: $brackets_blue_dark;
+        border-color: $brackets_blue_dark;
+	}
+}
+
+.border-button {
+    border-color: $white;
+
+    &:hover, &:focus, &:active  {
+		color: $brackets_blue;
+        background-color: $white;
+	}
+}

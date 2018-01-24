@@ -1,0 +1,157 @@
+/*
+ * Copyright (c) 2018 - present Adobe Systems Incorporated. All rights reserved.
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a
+ * copy of this software and associated documentation files (the "Software"),
+ * to deal in the Software without restriction, including without limitation
+ * the rights to use, copy, modify, merge, publish, distribute, sublicense,
+ * and/or sell copies of the Software, and to permit persons to whom the
+ * Software is furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+ * DEALINGS IN THE SOFTWARE.
+ *
+ */
+
+@import "spinner";
+.anchor-div {
+    text-align: center;
+    p {
+        margin-top: 2px;
+        margin-bottom: 10px;
+        >a {
+            font-size: 15px;
+            color: $brackets_blue;
+            font-family: $font_1, $font_2;
+            margin-right: 1em;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+#os-alert {
+    display: none;
+    border: 2px solid $os_alert_color;
+    border-radius: 3px;
+    padding: 15px 20px;
+    width: 350px;
+    max-width: 100%;
+    background-color: transparent;
+    font-size: 15px;
+    margin: auto;
+}
+
+.last-row {
+    padding-bottom: 0;
+}
+
+.on-white {
+    color: $color_stack;
+}
+
+.optionstxt {
+    font-size: 1.3em;
+    color: $white;
+    padding: 15px 0;
+    margin: 0;
+    text-align: center;
+    line-height: 28px;
+}
+
+.img-shadow {
+    position: relative;
+    -moz-box-shadow: 1px 2px 4px $line_shadow5;
+    -webkit-box-shadow: 1px 2px 4px $line_shadow5;
+    box-shadow: 1px 2px 4px $line_shadow5;
+    padding: 0px;
+}
+
+.img-radius {
+    border-radius: 2px 2px 2px 2px;
+    -moz-border-radius: 2px 2px 2px 2px;
+    -webkit-border-radius: 2px 2px 2px 2px;
+    border: 0 solid $black;
+}
+
+.img-radius-hero {
+    border-radius: 3px 3px 0 0;
+}
+
+.scroll-pad {
+    padding-top: 62px;
+    margin-top: -62px;
+}
+
+.slim-button {
+    margin: 1.25rem 0 0;
+    padding: 0.5rem 1rem 0.5rem 1rem !important;
+}
+
+.ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 80em;
+    margin: 0px !important;
+}
+
+.post-date {
+    margin: -15px 0 25px 0 !important;
+    font-size: 13px !important;
+    font-weight: 400 !important;
+}
+
+p.center-button {
+    margin: 0 auto !important;
+    text-align: center;
+}
+
+.background-body {
+    background-color: $off_white;
+}
+
+.button.button-border {
+    border-width: 2px !important;
+    border-color: $brackets_blue;
+    &:hover {
+        border-color: $brackets_blue_dark;
+    }
+}
+
+.top-bottom-margin {
+    margin: 50px 0 !important;
+}
+
+.top-margin {
+    margin-top: 50px !important;
+}
+
+.top-bottom-padding {
+    padding: 50px 0;
+}
+
+.bottom-padding {
+    padding: 0 0 50px 0;
+}
+
+.padding-none {
+    padding: 0 !important;
+}
+
+.padding-alt {
+    padding: 0 12px 0 12px;
+}
+
+.center-align {
+    margin: 0 auto;
+}

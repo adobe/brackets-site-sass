@@ -1,0 +1,228 @@
+/*
+ * Copyright (c) 2018 - present Adobe Systems Incorporated. All rights reserved.
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a
+ * copy of this software and associated documentation files (the "Software"),
+ * to deal in the Software without restriction, including without limitation
+ * the rights to use, copy, modify, merge, publish, distribute, sublicense,
+ * and/or sell copies of the Software, and to permit persons to whom the
+ * Software is furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+ * DEALINGS IN THE SOFTWARE.
+ *
+ */
+
+@import "registry_placeholders";
+@import "registry_dropzone";
+.admin {
+    clear: both;
+    display: block;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    margin: 0 !important;
+}
+
+#content-wrapper1 {
+    &.reg-box {
+        .box {
+            margin: 8px 4px 0 !important;
+            height: 9em;
+            .description {
+                font-family: $font_1, $font_2;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 18px;
+                margin: 0;
+                color: $off_black;
+                text-rendering: optimizeLegibility;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                display: block;
+                height: 1.2em;
+                white-space: nowrap;
+            }
+        }
+        h2 a {
+            color: $brackets-blue;
+            text-rendering: optimizeLegibility;
+        }
+    }
+    .category {
+        h1 {
+            color: $line_shadow5;
+            font-weight: 500;
+            margin-left: 2px;
+        }
+    }
+}
+
+.divbox1 {
+    width: 80%;
+    float: left;
+    margin-top: 5px 0 0 0;
+    &#fourth {
+        margin-top: 15px;
+    }
+}
+
+.divbox2 {
+    width: 12%;
+    float: right;
+    margin: 0;
+    img {
+        position: relative;
+        left: 0;
+        top: 0;
+        border-radius: 5px;
+        box-shadow: 2px 2px 8px $line_shadow;
+        &#d-icon {
+            box-shadow: none;
+        }
+    }
+}
+
+#fourth {
+    & > div {
+        margin-top: 25px;
+    }
+}
+
+
+//Custom margin
+.dropzone {
+    margin: 20px auto;
+}
+
+ul.ext-keywords {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: 0 3px;
+    margin-bottom: 0;
+    li {
+        padding: 2px 4px;
+        list-style-type: none;
+        display: inline;
+        border-radius: 3px;
+        border: 1px solid $color_dawn_pink;
+        background-color: $color_spring_wood;
+        a {
+            font-size: 12px;
+        }
+    }
+}
+
+.info {
+    h2,
+    h3 {
+        font-family: $font_1, $font_2 !important;
+        color: $line_shadow5;
+        font-size: 32px;
+    }
+    input {
+        @extend %extend_input;
+    }
+}
+
+.extension-list [class*="column"]+[class*="column"]:last-child {
+    float: left;
+}
+
+#customModal {
+    display: none;
+    border-radius: 10px;
+    padding: 15px;
+    #modalBody {
+        padding: 10px 0 20px 0;
+        input {
+            @extend %extend_input;
+        }
+    }
+    #modalButtons {
+        button {
+            margin-left: 5px;
+            margin-bottom: 0;
+            padding: 0.7em 1em;
+            border-radius: 5px;
+        }
+    }
+    width: 34%;
+    left: 50%;
+    margin-left: -17%;
+}
+
+.alert-box {
+    width: 75%;
+    margin: 15px auto;
+    border-style: solid;
+    border-width: 1px;
+    display: block;
+    font-weight: normal;
+    margin-bottom: 1.25rem;
+    position: relative;
+    padding: 0.875rem 1.5rem 0.875rem 0.875rem;
+    font-size: 0.8125rem;
+    transition: opacity 300ms ease-out;
+    background-color: #008cba;
+    border-color: #0078a0;
+    color: white;
+    .close {
+        font-size: 1.375rem;
+        padding: 9px 6px 4px;
+        line-height: 0;
+        position: absolute;
+        top: 50%;
+        margin-top: -0.6875rem;
+        right: 0.25rem;
+        color: #333333;
+        opacity: 0.3;
+    }
+    .close:hover,
+    .close:focus {
+        opacity: 0.5;
+    }
+    &.radius {
+        border-radius: 3px;
+    }
+    &.round {
+        border-radius: 1000px;
+    }
+    &.success {
+        background-color: #43ac6a;
+        border-color: #3a945b;
+        color: white;
+    }
+    &.alert {
+        background-color: #f04124;
+        border-color: #de2d0f;
+        color: white;
+    }
+    &.secondary {
+        background-color: #e7e7e7;
+        border-color: #c7c7c7;
+        color: #4f4f4f;
+    }
+    &.warning {
+        background-color: #f08a24;
+        border-color: #de770f;
+        color: white;
+    }
+    &.info {
+        background-color: #a0d3e8;
+        border-color: #74bfdd;
+        color: #4f4f4f;
+    }
+    &.alert-close {
+        opacity: 0;
+    }
+}
